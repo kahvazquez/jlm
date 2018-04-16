@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>JLM Tech</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="description" content="">
+	  <meta name="author" content="">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!--Fonte-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav e ícones de toque -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+
+
+    <!-- SCRIPT 
+    ============================================================-->  
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--GOOGLE MAP-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-KDBUWDoEKYXNNX7XLfddiCi0ylBwN2A&callback=initMap"></script>
+	
+     <script>
+	 
+		var map;
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 15,
+		    center: new google.maps.LatLng(-22.902487, -43.272131),
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+		  };
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+		      mapOptions);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+		
+    </script>
+</head>
+
+<body>
+
+
+  <!--HEADER ROW-->
+  <div id="header-row">
+    <div class="container">
+      <div class="row">
+              <!--LOGO-->
+              <div class="span3"><a class="brand" href="#"><img src="img/logo.png"/></a></div>
+              <!-- /LOGO -->
+
+            <!-- MAIN NAVIGATION -->  
+              <div class="span9">
+                <div class="navbar  pull-right">
+                  <div class="navbar-inner">
+                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        
+                        <li class="dropdown">
+                          <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">Sobre<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                  <li><a href="about.html">Empresa</a></li>
+                                  <!--<li><a href="about.html">History</a></li>
+                                  <li><a href="about.html">Team</a></li>-->
+                            </ul>
+
+                        </li>
+
+                        <li><a href="service.html">Serviços</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                 
+                    </ul>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            <!-- MAIN NAVIGATION -->  
+      </div>
+    </div>
+  </div>
+  <!-- /HEADER ROW -->
+
+
+
+
+<div class="container">
+	  <!--PAGE TITLE-->
+
+	<div class="row">
+		<div class="span12">
+		<div class="page-header">
+				<h1>
+				Contato
+			</h1>
+		</div>
+		</div>
+	</div>
+
+  <!-- /. PAGE TITLE-->
+
+  <div class="row">
+
+  	<div class="span12"> 
+  		<div id="map-canvas"></div>
+  	</div>
+
+
+  		<span class="span6">
+  		 <strong><h3>Endereço</h3></strong>
+<address>
+  Praça Engenho Novo
+  4, Sala 203<br>
+  Engenho Novo, Rio de Janeiro - RJ<br>
+	Tel.: (21) 2281-1240 Fax: (21) 2281-2599 Cel.: (21) 98797-3658
+</address>
+ 
+<address>
+  <strong><h3>E-mail</h3></strong>
+  <a href="mailto:joaoluisbarbosa19@gmail.com">	joaoluisbarbosa19@gmail.com</a>
+</address>
+
+  			<p>
+Instalação e Manutenção de Equipamentos Eletrônicos LTDA.
+
+
+  			</p>
+  		</span>
+
+  </div>
+
+	
+</div>
+
+
+
+<!--Footer
+==========================-->
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="span6">Copyright &copy 2013 Shapebootstrap | All Rights Reserved  <br>
+        <small>Aliquam tincidunt mauris eu risus.</small>
+        </div>
+        <div class="span6">
+            <div class="social pull-right">
+                <a href="#"><img src="img/social/googleplus.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/twitter.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/rss.png" alt=""></a>
+            </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<!--/.Footer-->
+
+</body>
+</html>
